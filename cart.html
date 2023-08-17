@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ropa kawaii, tienda de novedades, papeleria kawaii"
+    />
+    <meta
+      name="keywords"
+      content="PAPELERIA, kawaii, Ropa, accesorios, guerrero, mexico"
+    />
+    <meta name="author" content="Luz Elena HS" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/carousel/"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <!-- icon -->
+
+    <!-- Google fonts End -->
+
+    <!-- custon style Sheet & JavaScript -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <script src="js/index.js" defer></script>
+    <!-- custon style Sheet & JavaScript -->
+    <title>MAGICAL MARU SHOP</title>
+  </head>
+  <body class="home">
+        <h1 align="center"><a
+            class="blog-header-logo text-body-emphasis text-decoration-none"
+            href="index.html"
+            FACE="times new roman"
+            size="10"
+            style="color: black; text-decoration: none;"
+            >MMSHOP</a> </h1>
+          
+          
+       
+
+    <header class="primary-header container flex">
+      <div class="header-inner-one flex">
+        <button
+          class="mobile-close-btn"
+          data-visible="false"
+          aria-controls="primary-navigation"
+        >
+          <i class="uil uil-times-circle"></i>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li>
+              <a class="active fs-100 fs-montserrat bold-500" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="shop.html"
+                >Tienda</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="about.html"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="contactus.html"
+                >Contáctenos</a
+              >
+            </li>
+
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="cart.html"
+                >Carrito</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-login flex">
+        <img
+          src="img/logito.jpg"
+          alt="mdo"
+          width="32"
+          height="32"
+          class="rounded-circle"
+        />
+        <p class="fs-100 fs-montserrat bold-500">Iniciar sesion</p>
+       
+        <i
+        id="seach-box"
+        aria-controls="seach-icon"
+        class="uil uil-search"
+      ></i>
+        
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+        <i
+          id="cart-box"
+          aria-controls="cart-icon"
+          class="uil uil-shopping-bag"
+        ></i> 
+
+        <!-- =================1111111111================== -->
+        <div id="cart-icon" data-visible="false" class="cart-icon">
+          <div class="shopping flex">
+            <p>Shopping Basket</p>
+            <i id="cross-btn" class="uil uil-times"></i>
+          </div>
+          <div class="cart bold-800 flex">
+            <i class="uil uil-shopping-cart-alt"></i>
+            <p>Cart Is Empty</p>
+
+            <!-- ================================================== -->
+
+            <!-- ================================================== -->
+          </div>
+        </div>
+      </div>
+      <div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
+    </header>
+    <!-- ===================Shop Feature Section============================ -->
+
+    <section class="shop-feature bg-gray grid" style="background-color: black;">
+      <div>
+        <p class="fs-montserrat text-white">
+         Inicio<span aria-hidden="true" class="margin">></span> Carrito
+        </p>
+      </div>
+      <h2 class="fs-poppins fs-300 bold-700 text-white">Carrito de compras</h2>
+    </section>
+
+    <!-- ===============================Cart Section=================== -->
+
+    <section class="table">
+      <table>
+        <thead class="thead fs-poppins text-black bold-700 bg-very-light-gray">
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Producto</td>
+            <td>Precio</td>
+            <td>Cantidad</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="uil uil-times"></i></td>
+            <td><i class="uil uil-user-circle"></i></td>
+            <td></td>
+            <td>$0.00</td>
+            <td><input type="number" min="0" max="10" /></td>
+            <td>$0.00</td>
+          </tr>
+          <tr>
+            <td><i class="uil uil-times"></i></td>
+            <td><i class="uil uil-user-circle"></i></td>
+            <td></td>
+            <td>$0.00</td>
+            <td><input type="number" min="0" max="10" /></td>
+            <td>$0.00</td>
+          </tr>
+          <tr>
+            <td><i class="uil uil-times"></i></td>
+            <td><i class="uil uil-user-circle"></i></td>
+            <td></td>
+            <td>$0.00</td>
+            <td><input type="number" min="0" max="10" /></td>
+            <td>$0.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="copen-box flex">
+        <div>
+            <input class="copen-input fs-poppins text-black" type="text">
+            <button class="cupen-btn fs-poppins bold-700 text-black">Aplicar cupon</button>
+        </div>
+        <div>
+            <button class="cupen-btn fs-poppins bold-700 text-black">Actualizar carrito </button>
+        </div>
+    </div>
+      
+    </section>
+
+    <section class="check-out grid">
+
+        <div>
+
+        </div>
+        <div>
+        <h3 class="fs-poppins fs-300 text-black bold-700">Total</h3>
+
+        <table>
+            <thead class="thead fs-poppins text-black bold-700">
+              <tr>
+                <td class="bg-very-light-gray">Subtotal</td>
+                <td>$0.00</td>
+              </tr>
+            </thead>
+            <thead class="thead fs-poppins text-black bold-700">
+              <tr>
+                <td class="bg-very-light-gray">Total</td>
+                <td class="bold-700">$0.00</td>
+              </tr>
+            </thead>
+            <tbody>
+            </table>
+            <div class="grid">
+                <button class="fs-poppins text-black bold-800 fs-300 bg-gray">Pagar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===============================Cart Section=================== -->
+
+    <footer>
+      <!-- =============Brands================= -->
+    
+      <!-- =============Footer Menu=================== -->
+      <section class="footer grid" style="background-color: rgb(244, 248, 248)">
+        <div class="footer-logo grid">
+          <img src="img/favicon.ico" alt="" />
+          <p class="fs-montserrat fs-200">
+            Porque nos importa que siempre estes a la moda!
+            <br />
+            Visitanos en nuestras redes sociales.
+          </p>
+          <div class="social-media flex">
+            <i class="uil uil-facebook-f"></i>
+            <i class="uil uil-instagram"></i>
+            <i class="uil uil-linkedin"></i>
+            <i class="uil uil-twitter"></i>
+          </div>
+        </div>
+    
+        <div class="footer-menu grid">
+          <h3 class="fs-poppins fs-200 bold-800">Links</h3>
+          <ul>
+            <li>
+              <a class="fs-montserrat text-black fs-200" href="#">Inicio</a>
+            </li>
+            <li>
+              <a class="fs-montserrat text-black fs-200" href="#"
+                >Sobre nosotros</a
+              >
+            </li>
+            <li>
+              <a class="fs-montserrat text-black fs-200" href="#">Tienda</a>
+            </li>
+            <li>
+              <a class="fs-montserrat text-black fs-200" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="contact grid">
+          <h3 class="fs-poppins fs-200 bold-800">Contacto</h3>
+          <p class="fs-montserrat">
+            +99 (0) 101 0000 888 Magical Maru Shop. Codigo postal 41100 Chilapa
+            De Alvarez, Gro.
+          </p>
+        </div>
+    
+        <div class="emails grid">
+          <h3 class="fs-poppins fs-200 bold-800">Subscribete con tu Email</h3>
+          <p class="updates fs-poppins fs-300 bold-800">
+            Noticias y actualizaciones
+          </p>
+          <div class="inputField flex bg-gray">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="fs-montserrat bg-gray"
+            />
+            <button class="bg-green text-white fs-poppins fs-50">
+              Subscribete
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="pie" align="center">
+        <section class="pie">
+          <div class="col-4 text-center">
+            <br />
+            <a
+              class="blog-header-logo text-body-emphasis text-decoration-none"
+              href="#"
+              FACE="times new roman"
+              size="30"
+              style="color: black; text-decoration: none"
+              >MAGICAL <br>MARU SHOP</a
+            >
+          </div>
+        </section>
+      </div>
+    
+      <section class="copyRight">
+        <p class="c-font fs-montserrat fs-200">
+          © 2023 tienda. Todos los derechos reservados.
+        </p>
+        <p class="fs-montserrat fs-100 text-align p-top">
+          Politica de privacidad. Terminos de Condicion
+        </p>
+        <a href="#contenedor"
+          ><img src="img/arriba.png" alt="Volver arriba"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>
